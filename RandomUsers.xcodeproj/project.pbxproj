@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C931A4452959FE1E00A9BF68 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931A4442959FE1E00A9BF68 /* UserData.swift */; };
 		C931A447295A040100A9BF68 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931A446295A040100A9BF68 /* UsersView.swift */; };
+		C931A449295A14C300A9BF68 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931A448295A14C300A9BF68 /* User.swift */; };
 		C9A7ACA629538FF70063899C /* RandomUsersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7ACA529538FF70063899C /* RandomUsersApp.swift */; };
 		C9A7ACA829538FF70063899C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7ACA729538FF70063899C /* ContentView.swift */; };
 		C9A7ACAA29538FF90063899C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A7ACA929538FF90063899C /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		C931A4442959FE1E00A9BF68 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		C931A446295A040100A9BF68 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		C931A448295A14C300A9BF68 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C9A7ACA229538FF70063899C /* RandomUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A7ACA529538FF70063899C /* RandomUsersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUsersApp.swift; sourceTree = "<group>"; };
 		C9A7ACA729538FF70063899C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				C9A7ACAB29538FF90063899C /* Preview Content */,
 				C931A4442959FE1E00A9BF68 /* UserData.swift */,
 				C931A446295A040100A9BF68 /* UsersView.swift */,
+				C931A448295A14C300A9BF68 /* User.swift */,
 			);
 			path = RandomUsers;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			files = (
 				C931A447295A040100A9BF68 /* UsersView.swift in Sources */,
 				C9A7ACA829538FF70063899C /* ContentView.swift in Sources */,
+				C931A449295A14C300A9BF68 /* User.swift in Sources */,
 				C9A7ACA629538FF70063899C /* RandomUsersApp.swift in Sources */,
 				C931A4452959FE1E00A9BF68 /* UserData.swift in Sources */,
 				C9A7ACD629539A240063899C /* UserFetchingClient.swift in Sources */,

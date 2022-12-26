@@ -11,16 +11,9 @@ enum UserFetchingClient {
   // swiftlint:disable:next force_unwrapping
   static private let url = URL(string: "https://randomuser.me/api/?results=10&format=pretty")!
 
-  static func getUsers() async throws -> String {
+  static func getUsers() async throws -> [User] {
     async let (data, _) = URLSession.shared.data(from: url)
-    if let value = try await String(data: data, encoding: .utf8) {
-      return value
-    } else {
-      throw UserError.failedStringConversion
-    }
+    let response = try await JSONDecoder().decode(Response.self, from: data)
+    return response.users
   }
-}
-
-enum UserError: Error {
-  case failedStringConversion
 }
