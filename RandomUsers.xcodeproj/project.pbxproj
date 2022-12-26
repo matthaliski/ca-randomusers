@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C931A4452959FE1E00A9BF68 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931A4442959FE1E00A9BF68 /* UserData.swift */; };
+		C931A447295A040100A9BF68 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931A446295A040100A9BF68 /* UsersView.swift */; };
 		C9A7ACA629538FF70063899C /* RandomUsersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7ACA529538FF70063899C /* RandomUsersApp.swift */; };
 		C9A7ACA829538FF70063899C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7ACA729538FF70063899C /* ContentView.swift */; };
 		C9A7ACAA29538FF90063899C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A7ACA929538FF90063899C /* Assets.xcassets */; };
@@ -16,6 +18,7 @@
 		C9A7ACC329538FF90063899C /* RandomUsersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7ACC229538FF90063899C /* RandomUsersUITestsLaunchTests.swift */; };
 		C9A7ACD1295390750063899C /* swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C9A7ACD0295390750063899C /* swiftlint.yml */; };
 		C9A7ACD4295394060063899C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C9A7ACD3295394060063899C /* .gitignore */; };
+		C9A7ACD629539A240063899C /* UserFetchingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7ACD529539A240063899C /* UserFetchingClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C931A4442959FE1E00A9BF68 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		C931A446295A040100A9BF68 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		C9A7ACA229538FF70063899C /* RandomUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A7ACA529538FF70063899C /* RandomUsersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUsersApp.swift; sourceTree = "<group>"; };
 		C9A7ACA729538FF70063899C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,8 +52,9 @@
 		C9A7ACC029538FF90063899C /* RandomUsersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUsersUITests.swift; sourceTree = "<group>"; };
 		C9A7ACC229538FF90063899C /* RandomUsersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUsersUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C9A7ACD0295390750063899C /* swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftlint.yml; sourceTree = "<group>"; };
-		C9A7ACD2295393BC0063899C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C9A7ACD2295393BC0063899C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
 		C9A7ACD3295394060063899C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		C9A7ACD529539A240063899C /* UserFetchingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFetchingClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +108,13 @@
 		C9A7ACA429538FF70063899C /* RandomUsers */ = {
 			isa = PBXGroup;
 			children = (
+				C9A7ACD529539A240063899C /* UserFetchingClient.swift */,
 				C9A7ACA529538FF70063899C /* RandomUsersApp.swift */,
 				C9A7ACA729538FF70063899C /* ContentView.swift */,
 				C9A7ACA929538FF90063899C /* Assets.xcassets */,
 				C9A7ACAB29538FF90063899C /* Preview Content */,
+				C931A4442959FE1E00A9BF68 /* UserData.swift */,
+				C931A446295A040100A9BF68 /* UsersView.swift */,
 			);
 			path = RandomUsers;
 			sourceTree = "<group>";
@@ -289,8 +298,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C931A447295A040100A9BF68 /* UsersView.swift in Sources */,
 				C9A7ACA829538FF70063899C /* ContentView.swift in Sources */,
 				C9A7ACA629538FF70063899C /* RandomUsersApp.swift in Sources */,
+				C931A4452959FE1E00A9BF68 /* UserData.swift in Sources */,
+				C9A7ACD629539A240063899C /* UserFetchingClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
