@@ -10,8 +10,8 @@
 		C931A4452959FE1E00A9BF68 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931A4442959FE1E00A9BF68 /* UserData.swift */; };
 		C931A447295A040100A9BF68 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931A446295A040100A9BF68 /* UsersView.swift */; };
 		C931A449295A14C300A9BF68 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931A448295A14C300A9BF68 /* User.swift */; };
+		C931A44B295A261800A9BF68 /* randomUsers.json in Resources */ = {isa = PBXBuildFile; fileRef = C931A44A295A261800A9BF68 /* randomUsers.json */; };
 		C9A7ACA629538FF70063899C /* RandomUsersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7ACA529538FF70063899C /* RandomUsersApp.swift */; };
-		C9A7ACA829538FF70063899C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7ACA729538FF70063899C /* ContentView.swift */; };
 		C9A7ACAA29538FF90063899C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A7ACA929538FF90063899C /* Assets.xcassets */; };
 		C9A7ACAD29538FF90063899C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A7ACAC29538FF90063899C /* Preview Assets.xcassets */; };
 		C9A7ACB729538FF90063899C /* RandomUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A7ACB629538FF90063899C /* RandomUsersTests.swift */; };
@@ -43,9 +43,9 @@
 		C931A4442959FE1E00A9BF68 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		C931A446295A040100A9BF68 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		C931A448295A14C300A9BF68 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C931A44A295A261800A9BF68 /* randomUsers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = randomUsers.json; sourceTree = "<group>"; };
 		C9A7ACA229538FF70063899C /* RandomUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A7ACA529538FF70063899C /* RandomUsersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUsersApp.swift; sourceTree = "<group>"; };
-		C9A7ACA729538FF70063899C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C9A7ACA929538FF90063899C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9A7ACAC29538FF90063899C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C9A7ACB229538FF90063899C /* RandomUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +90,7 @@
 				C9A7ACD3295394060063899C /* .gitignore */,
 				C9A7ACD2295393BC0063899C /* README.md */,
 				C9A7ACD0295390750063899C /* swiftlint.yml */,
+				C931A44A295A261800A9BF68 /* randomUsers.json */,
 				C9A7ACA429538FF70063899C /* RandomUsers */,
 				C9A7ACB529538FF90063899C /* RandomUsersTests */,
 				C9A7ACBF29538FF90063899C /* RandomUsersUITests */,
@@ -110,14 +111,13 @@
 		C9A7ACA429538FF70063899C /* RandomUsers */ = {
 			isa = PBXGroup;
 			children = (
-				C9A7ACD529539A240063899C /* UserFetchingClient.swift */,
 				C9A7ACA529538FF70063899C /* RandomUsersApp.swift */,
-				C9A7ACA729538FF70063899C /* ContentView.swift */,
+				C931A446295A040100A9BF68 /* UsersView.swift */,
+				C9A7ACD529539A240063899C /* UserFetchingClient.swift */,
+				C931A4442959FE1E00A9BF68 /* UserData.swift */,
+				C931A448295A14C300A9BF68 /* User.swift */,
 				C9A7ACA929538FF90063899C /* Assets.xcassets */,
 				C9A7ACAB29538FF90063899C /* Preview Content */,
-				C931A4442959FE1E00A9BF68 /* UserData.swift */,
-				C931A446295A040100A9BF68 /* UsersView.swift */,
-				C931A448295A14C300A9BF68 /* User.swift */,
 			);
 			path = RandomUsers;
 			sourceTree = "<group>";
@@ -253,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A7ACD4295394060063899C /* .gitignore in Resources */,
+				C931A44B295A261800A9BF68 /* randomUsers.json in Resources */,
 				C9A7ACAD29538FF90063899C /* Preview Assets.xcassets in Resources */,
 				C9A7ACD1295390750063899C /* swiftlint.yml in Resources */,
 				C9A7ACAA29538FF90063899C /* Assets.xcassets in Resources */,
@@ -302,7 +303,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C931A447295A040100A9BF68 /* UsersView.swift in Sources */,
-				C9A7ACA829538FF70063899C /* ContentView.swift in Sources */,
 				C931A449295A14C300A9BF68 /* User.swift in Sources */,
 				C9A7ACA629538FF70063899C /* RandomUsersApp.swift in Sources */,
 				C931A4452959FE1E00A9BF68 /* UserData.swift in Sources */,
