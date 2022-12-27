@@ -27,6 +27,7 @@ final class RandomUsersTests: XCTestCase {
       fatalError("randomUsers.json file not found")
     }
     let internalURL = URL(fileURLWithPath: path)
+    // swiftlint:disable:next force_try
     return try! Data(contentsOf: internalURL)
   }
 }
